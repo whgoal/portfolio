@@ -1,0 +1,127 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #000000;
+    font-family: "pretendard";
+    -ms-overflow-style: none;
+    background-color: #ffffff;
+    transition: 2s;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 4848px;
+    left: 0px;
+    top: 1628px;
+    z-index: -99;
+
+    background: #ffffff;
+}
+
+#container {
+    text-align: center;
+    color: #ffffff;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 120px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #000000;
+}
+
+img {
+    border: 0;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    font-family: 'Amiri', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 999999;
+    height: 96px;
+    transition: top 0.6s ease-in-out;
+    top: -40px;
+    left: 0;
+}
+
+.nav-up {
+    top: -200px;
+}
+
+header .logo {
+    position: absolute;
+    left: 30px;
+    top: 98.32px;
+}
+
+.logo_i {
+    position: absolute;
+    width: 58px;
+    height: 65px;
+    left: 100px;
+    top: -20px;
+    font-family: 'Amiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 176px;
+}
+
+header .main_menu {
+    margin-top: 91px;
+    margin-right: 139px;
+    float: right;
+}
+
+header .main_menu ul {
+    margin: 0 auto;
+    text-align: center;
+    display: inline;
+}
+
+header .main_menu li {
+    display: inline;
+    margin-left: 64px;
+    margin-top: 910px;
+}
+
+@keyframes blink-effect {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    animation: blink-effect 1s step-end infinite;
+}
